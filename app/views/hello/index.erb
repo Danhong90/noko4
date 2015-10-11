@@ -1,0 +1,12 @@
+<p>추출하기</p>
+<%= link_to 'Export', excel_path(request.parameters.merge({:format => :xls}))%>
+
+<p>레코드 삭제</p>
+<a href=/hello/delete_record>삭제</a>
+
+<p>공모전 스크랩</p>
+<a href=/hello/noko>스크랩</a>
+
+<p>인턴 스크랩</p>
+<a href=/hello/noko_intern>스크랩</a>
+

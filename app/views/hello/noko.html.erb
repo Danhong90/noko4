@@ -1,0 +1,10 @@
+<h1>Hello#noko</h1>
+<%= link_to 'Export', excel_path(request.parameters.merge({:format => :xls}))%>
+
+<% @hey.each do |line| %>
+<p><%= line.post_subject %> : <%= line.post_deadline%></p>
+<% end %>
+
+<% @hello.each do |he| %>
+<p><%=he%></p>
+<% end %>
